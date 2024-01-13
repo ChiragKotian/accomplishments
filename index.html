@@ -10,11 +10,24 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- Loader -->
+		<script src="jquery-2.1.4.js"></script>
+		<!-- Loader -->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
-
+		<!-- Loader -->
+		<div class="loader-wrapper">
+			<span class="loader"><span class="loader-inner"></span></span>
+		  </div>
+	  
+		  <script>
+			  $(window).on("load",function(){
+				$(".loader-wrapper").fadeOut("slow");
+			  });
+		  </script>
+		<!-- Loader -->  
 		<!-- Wrapper -->
 			<div id="wrapper" class="fade-in">
 
